@@ -10,7 +10,8 @@
     "flow-bin": "^0.39.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-google-maps": "beta"
   },
   "scripts": {
     "start": "react-scripts start",
