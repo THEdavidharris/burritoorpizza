@@ -1,8 +1,9 @@
+// Locator.js
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Locator.css';
 
-class App extends Component {
+class Locator extends Component {
 
   getCurrentLocation() {
     if ("geolocation" in navigator) {
@@ -34,4 +35,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Locator;
