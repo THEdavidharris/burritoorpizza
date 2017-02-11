@@ -3,6 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  getCurrentLocation() {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function(position){
+        var coords = position.coords;
+        console.log(coords);
+      });
+    } else {
+      console.log("HTML5 geolocation not available")
+    }
+  }
+
+  componentDidMount(){
+    this.getCurrentLocation();
+  }
+
   render() {
     return (
       <div className="App">
